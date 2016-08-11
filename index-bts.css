@@ -1,0 +1,144 @@
+html, body {
+	margin: 0
+	padding: 0;
+
+}
+
+.navbar-toggle.collapsed h3 {
+font-family: 'Pacifico', cursive;
+font-size:34px;
+}
+
+
+#homeHeading {
+	font-family: 'Pacifico', cursive;
+	font-size: 111px;
+}
+
+ h2 {
+	font-size: 34px;
+}
+
+.navbar-header h3 {
+	font-size: 34px;
+	font-family: 'Great Vibes', cursive;
+}
+
+
+
+
+.btn-success {
+	font-size: 24px;
+	position: relative;
+    font-size: 24px;
+    left: 70px;
+}
+
+
+.header-content {
+   background-color: teal;
+   background-repeat: no-repeat;
+   background-position: center;.
+   background-size: cover;
+   width: 1421px;
+   height:600px;
+  }
+
+  .header-content-inner {
+  	color: white;
+  	margin-top: 51px
+  }
+
+
+.bg-primary {
+	background-color: white;
+	color: black;
+	width: 1421px;
+}
+
+.bg-primary hr {
+  border-top: 1px solid teal;
+}
+
+.section-heading {
+	font-size: 57px;
+	color: teal;
+	
+	
+}
+
+.port {
+     width: 233px;
+    
+    color: white;
+    text-align: center;
+    font-size: 57px;
+    position: relative;
+    left: 60px;
+
+}
+
+#services {
+	width: 1421px;
+}
+
+#services hr {
+	width: 680px;
+	position: relative;
+	right: 188px;
+}
+
+#services h3 {
+    text-align: -webkit-center;
+}
+
+#services p {
+    text-align: -webkit-center;
+}
+
+#services img {
+	position: relative;
+	left: 110px;
+}
+
+#portfolio img  {
+	width: 550px;
+    height: 287px;
+}
+
+#contact {
+	margin-bottom: 40px;
+}
+
+#contact h3 {
+  font-size: 40px;
+}
+
+#message {
+   
+   height: 188px;
+}
+
+
+#services {
+	background-color: teal;
+    color: white;
+}
+
+.well.well-lg {
+	background-color: #666666;
+	color: white;
+	width: 1421px;
+	
+}
+
+
+.well.well-lg img {
+	height: 55px;
+	width: 55px;
+}
+
+
+
+
+
