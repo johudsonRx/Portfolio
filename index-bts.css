@@ -58,13 +58,28 @@ font-size:34px;
 
 .bg-primary hr {
   border-top: 1px solid teal;
+  left: -10pc;
+    position: relative;
+
+}
+
+.btn.btn-default {
+	position: relative;
+    left: -12pc;
 }
 
 .section-heading {
 	font-size: 57px;
 	color: teal;
+	left: -13pc;
+    position: relative;
 	
 	
+}
+
+#about p {
+    position: relative;
+    left: -11pc;
 }
 
 .port {
@@ -140,5 +155,7 @@ font-size:34px;
 
 
 
-
+#myPhoto {
+	width:86%;
+}
 
