@@ -32,8 +32,14 @@ font-size:34px;
 	position: relative;
     font-size: 24px;
     left: 70px;
+
 }
 
+#resume {
+	background-color: teal;
+	color: white;
+	font-size: 22px;
+}
 
 .header-content {
    background-color: teal;
