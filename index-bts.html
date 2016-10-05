@@ -7,14 +7,14 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link rel="stylesheet" href="assets/css/reset.css">
+   <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
 
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-   <!-- <script src="js/jquery-1.7.1.min.js"></script>
-
-    <script src="js/jquery.scrollorama.js"></script> -->
-
+<!-- 
+  <script src="jquery-2.0.2.js"></script>
+  <script src="jquery.stellar.min.js"></script> 
+ -->
 
 <!-- Include tech opinions - Mac or Iphone user. Favorite apps - uber -->
 <!-- Link your online presence -->
@@ -26,6 +26,11 @@
    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
    
    <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
+
+
+<!--    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <script src="jquery.stellar.min.js"></script> 
+ -->
 
 </head>
 <body id="page-top">
@@ -58,7 +63,7 @@
    </div>
   </nav>
 
-  <header>
+  <header data-stellar-background-ratio="0.5">
     <div class="header-content">
             <div class="header-content-inner">
              <div class="container">
@@ -116,9 +121,12 @@
 
             </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
+  </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="about" data-stellar-background-ratio="0.5">
         <div class="container">
  <div class="row"> <div class="col-lg-4 text-center">
            <img id="myPhoto"src="assets/images/1666_edit.png">
@@ -146,7 +154,7 @@
         
     </section>
 
-   <section class="bg-primary" id="about">
+   <section class="bg-primary" id="about" data-stellar-background-ratio="0.5">
     <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
@@ -161,7 +169,7 @@
 
    </section>
 
-    <section id="services">
+    <section id="services" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -210,7 +218,7 @@
         
     </section>
 
-<section class="no-padding" id="portfolio">
+<section class="no-padding" id="portfolio" data-stellar-background-ratio="0.5">
 
      
 
@@ -245,6 +253,9 @@
           </div>
            
           <div class="col-sm-4">
+
+     <a href="https://salty-cliffs-78218.herokuapp.com/"> <img src="http://www.redbull.com/cs/RedBull2Upload/2015/11/30/1331762466354.gif"> </a>
+
           <!--  <img  src="http://usersthink.com/wp-content/uploads/12-usersthink-stock-image-small.jpg"/> -->
            </div>
           </div>
@@ -262,6 +273,7 @@
         
          </div>
          <div class="col-sm-4">
+       <h3 id="gifs">AJAX Music Gifs</h3>
 
          </div>
          </div>
@@ -271,7 +283,7 @@
             
 </section>
 
-    <section id="contact">
+    <section id="contact" data-stellar-background-ratio="0.5">
         <div class="container">
          <div class="row">
           <div class="col-sm-4">
@@ -351,17 +363,62 @@
     	</div>
       </div>
     </footer>
+
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<!--   <script src="assets/javascript/jquery.stellar.min.js"></script>  -->
+<!-- <script src="jquery.min.js"></script> -->
+<!-- <script src="assets/javascript/SVGPathPainter-1.0.1.js"></script> -->
+<script src="assets/javascript/circus-scroll-tween.min.js"></script>
+
 <script type="text/javascript">
-  
-// $(document).ready(function() {     
+  // $.stellar();
 
-//         var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+  $('html').csInit({
+ // global settings
+  wheelDelay: 300,
+  wheelDistance: 100,
+  wheelEase: 'easeOutQuad' 
+});
 
-//     });
+$('.anim1').csTween({
+  // begin / end scroll position
+  begin: 0,
+  end: 300,
+  // custom CSS classes
+  from:  {
+    letterSpacing: '0',
+    opacity: '1'
 
+  },
+
+  to: {
+      letterSpacing: '2vw',
+      opacity: '0'
+  },
+  // easing effect
+  easing: 'easeOutExpo',
+  // callbacks
+  onStart: function(el){
+    //console.log('onStart');
+  },
+  onProgress: function(el,p){
+    //console.log(p);
+  },
+  onComplete: function(el){
+    //console.log('onComplete');
+    $(el).hide();
+  },
+  onReverseStart: function(el){
+    //console.log('onReverseStart');
+    $(el).show();
+  },
+  onReverseComplete: function(el){
+  //console.log('onReverseComplete');
+  }
+});
 
 </script>
-    
+   
 
 </body>
 

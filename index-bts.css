@@ -24,8 +24,14 @@ font-size:34px;
 	font-family: 'Great Vibes', cursive;
 }
 
+header {
+  background-attachment: fixed;
+}
 
 
+section {
+  background-attachment: fixed;
+}
 
 .btn-success {
 	font-size: 24px;
@@ -184,4 +190,12 @@ font-size:34px;
 
 #vikingTrivia {
     text-align: center;
+}
+
+#thronesTrivia {
+  text-align: center;
+}
+
+#gifs {
+  text-align: center;
 }
