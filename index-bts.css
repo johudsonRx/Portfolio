@@ -199,3 +199,284 @@ section {
 #gifs {
   text-align: center;
 }
+
+@media screen and (max-width: 375px) {
+  html, body {
+  margin: 0
+  padding: 0;
+
+}
+
+#mainNav {
+  width: 375px;
+}
+
+.navbar-toggle.collapsed h3 {
+font-family: 'Pacifico', cursive;
+font-size:34px;
+}
+
+
+#homeHeading {
+  font-family: 'Pacifico', cursive;
+    font-size: 61px;
+    position: relative;
+    left: 5pc;
+}
+
+ h2 {
+  font-size: 15px;
+  position: relative;
+  left: 0pc;
+}
+
+h4 {
+  font-size: 45px;
+  position: relative;
+  left: 6pc;
+}
+
+.navbar-header h3 {
+  font-size: 34px;
+  font-family: 'Great Vibes', cursive;
+}
+
+header {
+  background-attachment: fixed;
+  height: 615px;
+}
+
+
+section {
+  background-attachment: fixed;
+
+}
+
+.no-padding {
+  height: 899px;
+}
+
+.btn-success {
+    position: relative;
+    font-size: 17px;
+    left: 7pc;
+
+}
+
+#resume {
+  background-color: teal;
+  color: white;
+  font-size: 22px;
+}
+
+.header-content {
+   background-color: teal;
+   background-repeat: no-repeat;
+   background-position: center;.
+   background-size: cover;
+    width: 375px;
+    height: 667px;
+  }
+
+  .header-content-inner {
+    color: white;
+    margin-top: 51px
+  }
+
+
+.bg-primary {
+  background-color: white;
+  color: black;
+  width: 375px;
+  height: 335px;
+}
+
+.bg-primary hr {
+    border-top: 1px solid teal;
+    left: 0pc;
+    position: relative;
+    top: -2pc;
+}
+
+
+.btn.btn-default {
+  position: relative;
+    left: -12pc;
+}
+
+.section-heading {
+   font-size: 45px;
+    color: teal;
+    left: 1pc;
+    position: relative;
+    top: -1pc;
+
+}
+
+#about p {
+    position: relative;
+    left: 17px;
+    font-size: 13px;
+    top: -3pc;
+}
+
+
+/*#port*/  /*h2{
+    position: relative;
+    left: 6pc;
+    font-size: 45px;
+     }
+*/
+
+
+/*section#services {
+  width: 375px;
+  height: 667px;
+}*/
+
+#services hr {
+  width: 680px;
+  position: relative;
+  right: 188px;
+}
+
+#services h3 {
+    text-align: -webkit-center;
+}
+
+#services p {
+    text-align: -webkit-center;
+}
+
+#services img {
+  position: relative;
+  left: 110px;
+  width: 21%;
+  margin-bottom: 6pc;
+}
+
+#portfolio img  {
+    width: 339px;
+    height: 164px;
+    margin-top: 6pc;
+    position: relative;
+    top: -6pc;
+    margin-left: 3px;
+}
+
+#contact {
+  margin-bottom: 40px;
+}
+
+#contact h3 {
+  font-size: 40px;
+}
+
+#message {
+   
+   height: 188px;
+}
+
+
+#services {
+  background-color: teal;
+    color: white;
+    width: 375px;
+    height: 667px;
+}
+
+.well.well-lg {
+  background-color: #666666;
+  color: white;
+  width: 1421px;
+  position: relative;
+  left: -1pc;
+  width: 375px;
+}
+
+
+.well.well-lg img {
+  height: 55px;
+  width: 55px;
+}
+
+
+
+#myPhoto {
+  width: 41%;
+  position: relative;
+    left: 0pc;
+  }
+
+#bootcamp {
+  width: 233px;
+    color: teal;
+    text-align: center;
+   font-size: 45px;
+    position: relative;
+    left: 60px;
+}
+
+#portfolio hr {
+  width: 680px;
+    position: relative;
+    right: 188px;
+    border-top: 1px solid teal;
+
+}
+
+#vikingTrivia {
+    text-align: center;
+    position: relative;
+    bottom: 38pc;
+}
+
+#thronesTrivia {
+  text-align: center;
+  position: relative;
+  bottom: 25pc;
+
+}
+
+#gifs {
+  text-align: center;
+  position: relative;
+  bottom: 12pc;
+
+}
+
+h3#placeholder1 {
+    position: relative;
+    top: -28pc;
+    left: -22px;
+}
+
+#phparagraph1 {
+    position: relative;
+    top: -28pc;
+}
+
+#placeholder2 {
+ position: relative;
+ bottom: 381px;
+ left: -22px;
+
+}
+
+#phparagraph2 {
+    position: relative;
+    bottom: 24pc;
+}
+
+#placeholder3 {
+    position: relative;
+    bottom: 19pc;
+    left: -22px;
+}
+
+#phplaceholder3 {
+   position: relative;
+    bottom: 19pc;
+}
+
+}
