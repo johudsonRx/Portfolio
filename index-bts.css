@@ -65,7 +65,7 @@ section {
 .bg-primary {
 	background-color: white;
 	color: black;
-	width: 1421px;
+	width: 100%;
 }
 
 .bg-primary hr {
@@ -106,7 +106,7 @@ section {
 }
 
 #services {
-	width: 1421px;
+	width: 100%;
 }
 
 #services hr {
@@ -155,7 +155,7 @@ section {
 .well.well-lg {
 	background-color: #666666;
 	color: white;
-	width: 1421px;
+	width: 100%;
 	
 }
 
