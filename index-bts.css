@@ -52,7 +52,7 @@ section {
    background-repeat: no-repeat;
    background-position: center;.
    background-size: cover;
-   width: 1421px;
+   width: 100%;
    height:600px;
   }
 
@@ -388,7 +388,7 @@ section {
 .well.well-lg {
   background-color: #666666;
   color: white;
-  width: 1421px;
+  width: 100%;
   position: relative;
   left: -1pc;
   width: 375px;
