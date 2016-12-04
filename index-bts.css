@@ -135,6 +135,9 @@ section {
 
 #contact {
 	margin-bottom: 40px;
+  text-align: center; 
+  background-image: url('http://www.officedesignblog.com/wp-content/uploads/2009/11/mo211.jpg');
+  background-size: cover,
 }
 
 #contact h3 {
@@ -392,6 +395,10 @@ section {
   position: relative;
   left: -1pc;
   width: 375px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 
