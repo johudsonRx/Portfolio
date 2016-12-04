@@ -203,6 +203,16 @@ section {
   text-align: center;
 }
 
+.contactIcons {
+  height: 55px;
+  width: 55px;
+}
+
+#email {
+  position: relative;
+    top: 1pc;
+}
+
 @media screen and (max-width: 375px) {
   html, body {
   margin: 0
@@ -487,3 +497,4 @@ h3#placeholder1 {
 }
 
 }
+
