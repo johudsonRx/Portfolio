@@ -220,59 +220,69 @@ section {
     top: 1pc;
 }
 
-.slideLeft{
-  animation-name: slideLeft;
-  -webkit-animation-name: slideLeft;  
+.hatch{
+  animation-name: hatch;
+  -webkit-animation-name: hatch;  
 
-  animation-duration: 1s; 
-  -webkit-animation-duration: 1s;
+  animation-duration: 2s; 
+  -webkit-animation-duration: 2s;
 
   animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out;   
+  -webkit-animation-timing-function: ease-in-out;
 
-  visibility: visible !important; 
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%; 
+
+  visibility: visible !important;   
 }
 
-@keyframes slideLeft {
+@keyframes hatch {
   0% {
-    transform: translateX(150%);
+    transform: rotate(0deg) scaleY(0.6);
   }
-  50%{
-    transform: translateX(-8%);
+  20% {
+    transform: rotate(-2deg) scaleY(1.05);
   }
-  65%{
-    transform: translateX(4%);
+  35% {
+    transform: rotate(2deg) scaleY(1);
   }
-  80%{
-    transform: translateX(-4%);
-  }
-  95%{
-    transform: translateX(2%);
-  }     
+  50% {
+    transform: rotate(-2deg);
+  } 
+  65% {
+    transform: rotate(1deg);
+  } 
+  80% {
+    transform: rotate(-1deg);
+  }   
   100% {
-    transform: translateX(0%);
-  }
+    transform: rotate(0deg);
+  }                 
 }
 
-@-webkit-keyframes slideLeft {
+@-webkit-keyframes hatch {
   0% {
-    -webkit-transform: translateX(150%);
+    -webkit-transform: rotate(0deg) scaleY(0.6);
   }
-  50%{
-    -webkit-transform: translateX(-8%);
+  20% {
+    -webkit-transform: rotate(-2deg) scaleY(1.05);
   }
-  65%{
-    -webkit-transform: translateX(4%);
+  35% {
+    -webkit-transform: rotate(2deg) scaleY(1);
   }
-  80%{
-    -webkit-transform: translateX(-4%);
-  }
-  95%{
-    -webkit-transform: translateX(2%);
-  }     
+  50% {
+    -webkit-transform: rotate(-2deg);
+  } 
+  65% {
+    -webkit-transform: rotate(1deg);
+  } 
+  80% {
+    -webkit-transform: rotate(-1deg);
+  }   
   100% {
-    -webkit-transform: translateX(0%);
-  }
+    -webkit-transform: rotate(0deg);
+  }   
 }
 
 @media screen and (max-width: 375px) {

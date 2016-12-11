@@ -28,6 +28,8 @@
    
    <link href='https://fonts.googleapis.com/css?family=Roboto:900' rel='stylesheet' type='text/css'>
 
+   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
 
 <!--    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
   <script src="jquery.stellar.min.js"></script> 
@@ -73,7 +75,7 @@
             
                </div>
                <div class="col-sm-4">
-              <h1 class="slideLeft" id="homeHeading">Josh Hudson</h1>
+              <h1 class="hatch" id="homeHeading">Josh Hudson</h1>
               </div>
               <div class="col-sm-4">
 
@@ -87,7 +89,7 @@
 
                </div>
                <div class="col-sm-9">
-                <h2 class="slideLeft">A developer who is passionate about his craft</h2>
+                <h2 class="hatch">A developer who is passionate about his craft</h2>
                 
                 </div>
                 <div class="col-sm-1">
@@ -106,7 +108,7 @@
                    
                    <div class="row">
                      <div class="col-sm-6">
-                    <a href="#about" class="btn btn-success page-scroll"><span class="glyphicon glyphicon-circle-arrow-down" class="page-scroll"></span> Learn More </a>
+                    <a href="#about" class="btn btn-success page-scroll hatch" ><span class="glyphicon glyphicon-circle-arrow-down" class="page-scroll"></span> Learn More </a>
                     </div>
                     <div class="col-sm-6">
                     </div>
@@ -391,57 +393,70 @@
     </footer>
 
   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-<!--   <script src="assets/javascript/jquery.stellar.min.js"></script>  -->
+  <script src="assets/javascript/jquery.stellar.min.js"></script> 
 <!-- <script src="jquery.min.js"></script> -->
 <!-- <script src="assets/javascript/SVGPathPainter-1.0.1.js"></script> -->
 <script src="assets/javascript/circus-scroll-tween.min.js"></script>
 
 <script type="text/javascript">
+
+$(window).scroll(function() {
+    $('#services').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+      if (imagePos < topOfWindow+400) {
+        $(this).addClass("slideUp");
+      }
+    });
+  });
   // $.stellar();
 
-  $('html').csInit({
- // global settings
-  wheelDelay: 300,
-  wheelDistance: 100,
-  wheelEase: 'easeOutQuad' 
-});
+//   $('#services').stellar();
 
-$('.anim1').csTween({
-  // begin / end scroll position
-  begin: 0,
-  end: 300,
-  // custom CSS classes
-  from:  {
-    letterSpacing: '0',
-    opacity: '1'
+//   $('html').csInit({
+//  // global settings
+//   wheelDelay: 300,
+//   wheelDistance: 100,
+//   wheelEase: 'easeOutQuad' 
+// });
 
-  },
+// $('.anim1').csTween({
+//   // begin / end scroll position
+//   begin: 0,
+//   end: 300,
+//   // custom CSS classes
+//   from:  {
+//     letterSpacing: '0',
+//     opacity: '1'
 
-  to: {
-      letterSpacing: '2vw',
-      opacity: '0'
-  },
-  // easing effect
-  easing: 'easeOutExpo',
-  // callbacks
-  onStart: function(el){
-    //console.log('onStart');
-  },
-  onProgress: function(el,p){
-    //console.log(p);
-  },
-  onComplete: function(el){
-    //console.log('onComplete');
-    $(el).hide();
-  },
-  onReverseStart: function(el){
-    //console.log('onReverseStart');
-    $(el).show();
-  },
-  onReverseComplete: function(el){
-  //console.log('onReverseComplete');
-  }
-});
+//   },
+
+//   to: {
+//       letterSpacing: '2vw',
+//       opacity: '0'
+//   },
+//   // easing effect
+//   easing: 'easeOutExpo',
+//   // callbacks
+//   onStart: function(el){
+//     //console.log('onStart');
+//   },
+//   onProgress: function(el,p){
+//     //console.log(p);
+//   },
+//   onComplete: function(el){
+//     //console.log('onComplete');
+//     $(el).hide();
+//   },
+//   onReverseStart: function(el){
+//     //console.log('onReverseStart');
+//     $(el).show();
+//   },
+//   onReverseComplete: function(el){
+//   //console.log('onReverseComplete');
+//   }
+// });
 
 </script>
    
