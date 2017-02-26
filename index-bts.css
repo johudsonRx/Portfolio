@@ -174,7 +174,9 @@ section {
 
 
 #myPhoto {
-	width:86%;
+	 height: 279px;
+   width: 214px;
+   margin-left: -70px;
 }
 
 #bootcamp {
