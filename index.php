@@ -1,1 +1,1 @@
-<?php include('index-bts.html'); ?>
+<?php include('index.html'); ?>
